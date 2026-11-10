@@ -197,7 +197,7 @@ window.HBC_PRODUCTS=[
  },
  {
   "slug": "clubhouse-tee-womens",
-  "name": "H Mark Tee — Women's",
+  "name": "Clubhouse Tee — Women's",
   "cat": "tees",
   "price": 30,
   "pf": {
