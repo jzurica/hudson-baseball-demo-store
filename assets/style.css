@@ -320,7 +320,7 @@ body.cart-open .drawer{transform:none;visibility:visible;transition:transform .3
   .header-inner{height:60px;gap:14px}
   .brand img{height:28px}
   .mobile-nav{display:grid;max-height:0;overflow:hidden;transition:max-height .35s;background:var(--paper);border-top:1px solid transparent}
-  body.menu-open .mobile-nav{max-height:520px;border-top-color:var(--line)}
+  body.menu-open .mobile-nav{max-height:calc(100svh - 100px);overflow:auto;border-top-color:var(--line)}
   .mobile-nav a{font-family:var(--display);font-size:30px;text-transform:uppercase;padding:10px var(--pad);border-bottom:1px solid var(--line)}
   .filters{top:60px}
   .tiles{grid-template-columns:1fr 1fr;gap:10px}
