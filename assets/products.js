@@ -15,22 +15,94 @@ window.HBC_PRODUCTS=[
    {
     "name": "Royal / Natural",
     "hex": "#24489b|#ece3cf",
-    "img": "assets/products/hat-royal-natural.webp"
+    "img": "assets/products/hat-royal-natural.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/hat-royal-natural.webp"
+     },
+     {
+      "label": "Left side",
+      "img": "assets/products/views/hat-royal-natural-left.webp"
+     },
+     {
+      "label": "Right side",
+      "img": "assets/products/views/hat-royal-natural-right.webp"
+     },
+     {
+      "label": "Back",
+      "img": "assets/products/views/hat-royal-natural-back.webp"
+     }
+    ]
    },
    {
     "name": "Navy / Natural",
     "hex": "#1e2840|#ece3cf",
-    "img": "assets/products/hat-navy-natural.webp"
+    "img": "assets/products/hat-navy-natural.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/hat-navy-natural.webp"
+     },
+     {
+      "label": "Left side",
+      "img": "assets/products/views/hat-navy-natural-left.webp"
+     },
+     {
+      "label": "Right side",
+      "img": "assets/products/views/hat-navy-natural-right.webp"
+     },
+     {
+      "label": "Back",
+      "img": "assets/products/views/hat-navy-natural-back.webp"
+     }
+    ]
    },
    {
     "name": "Red / Natural",
     "hex": "#b81c2e|#ece3cf",
-    "img": "assets/products/hat-red-natural.webp"
+    "img": "assets/products/hat-red-natural.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/hat-red-natural.webp"
+     },
+     {
+      "label": "Left side",
+      "img": "assets/products/views/hat-red-natural-left.webp"
+     },
+     {
+      "label": "Right side",
+      "img": "assets/products/views/hat-red-natural-right.webp"
+     },
+     {
+      "label": "Back",
+      "img": "assets/products/views/hat-red-natural-back.webp"
+     }
+    ]
    },
    {
     "name": "Black / Natural",
     "hex": "#1c1c1c|#ece3cf",
-    "img": "assets/products/hat-black-natural.webp"
+    "img": "assets/products/hat-black-natural.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/hat-black-natural.webp"
+     },
+     {
+      "label": "Left side",
+      "img": "assets/products/views/hat-black-natural-left.webp"
+     },
+     {
+      "label": "Right side",
+      "img": "assets/products/views/hat-black-natural-right.webp"
+     },
+     {
+      "label": "Back",
+      "img": "assets/products/views/hat-black-natural-back.webp"
+     }
+    ]
    }
   ],
   "sizes": [
@@ -42,7 +114,7 @@ window.HBC_PRODUCTS=[
    "Pre-curved contrast visor",
    "Adjustable plastic snap closure",
    "Cotton twill",
-   "Front-panel H mark, printed flat"
+   "Front-panel H mark, DTF print"
   ],
   "tag": "Headwear"
  },
@@ -62,22 +134,46 @@ window.HBC_PRODUCTS=[
    {
     "name": "Soft Cream",
     "hex": "#eee5d0",
-    "img": "assets/products/tee-men-soft-cream.webp"
+    "img": "assets/products/tee-men-soft-cream.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/tee-men-soft-cream.webp"
+     }
+    ]
    },
    {
     "name": "Athletic Heather",
     "hex": "#b7b6b2",
-    "img": "assets/products/tee-men-athletic-heather.webp"
+    "img": "assets/products/tee-men-athletic-heather.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/tee-men-athletic-heather.webp"
+     }
+    ]
    },
    {
     "name": "Navy",
     "hex": "#1f2a44",
-    "img": "assets/products/tee-men-navy.webp"
+    "img": "assets/products/tee-men-navy.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/tee-men-navy.webp"
+     }
+    ]
    },
    {
     "name": "Red",
     "hex": "#c41e3a",
-    "img": "assets/products/tee-men-red.webp"
+    "img": "assets/products/tee-men-red.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/tee-men-red.webp"
+     }
+    ]
    }
   ],
   "sizes": [
@@ -115,22 +211,46 @@ window.HBC_PRODUCTS=[
    {
     "name": "Natural",
     "hex": "#ece2cc",
-    "img": "assets/products/tee-women-natural.webp"
+    "img": "assets/products/tee-women-natural.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/tee-women-natural.webp"
+     }
+    ]
    },
    {
     "name": "Carolina Blue",
     "hex": "#86aedb",
-    "img": "assets/products/tee-women-carolina-blue.webp"
+    "img": "assets/products/tee-women-carolina-blue.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/tee-women-carolina-blue.webp"
+     }
+    ]
    },
    {
     "name": "Black",
     "hex": "#1c1c1d",
-    "img": "assets/products/tee-women-black.webp"
+    "img": "assets/products/tee-women-black.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/tee-women-black.webp"
+     }
+    ]
    },
    {
     "name": "Athletic Heather",
     "hex": "#b7b6b2",
-    "img": "assets/products/tee-women-athletic-heather.webp"
+    "img": "assets/products/tee-women-athletic-heather.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/tee-women-athletic-heather.webp"
+     }
+    ]
    }
   ],
   "sizes": [
@@ -141,7 +261,7 @@ window.HBC_PRODUCTS=[
    "2XL",
    "3XL"
   ],
-  "blurb": "A relaxed women's cut with a slightly longer body. The H mark is centered on the chest, clean and simple.",
+  "blurb": "A relaxed women's cut with a slightly longer body. The full HUDSON lockup sits centered on the chest.",
   "details": [
    "100% combed and ring-spun cotton (heathers are blends)",
    "Relaxed fit, side-seamed",
@@ -167,22 +287,46 @@ window.HBC_PRODUCTS=[
    {
     "name": "Red",
     "hex": "#c8102e",
-    "img": "assets/products/tee-kids-red.webp"
+    "img": "assets/products/tee-kids-red.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/tee-kids-red.webp"
+     }
+    ]
    },
    {
     "name": "Light Blue",
     "hex": "#a7c6e6",
-    "img": "assets/products/tee-kids-light-blue.webp"
+    "img": "assets/products/tee-kids-light-blue.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/tee-kids-light-blue.webp"
+     }
+    ]
    },
    {
     "name": "Sport Grey",
     "hex": "#b4b4b2",
-    "img": "assets/products/tee-kids-sport-grey.webp"
+    "img": "assets/products/tee-kids-sport-grey.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/tee-kids-sport-grey.webp"
+     }
+    ]
    },
    {
     "name": "Navy",
     "hex": "#1f2a44",
-    "img": "assets/products/tee-kids-navy.webp"
+    "img": "assets/products/tee-kids-navy.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/tee-kids-navy.webp"
+     }
+    ]
    }
   ],
   "sizes": [
@@ -226,22 +370,54 @@ window.HBC_PRODUCTS=[
    {
     "name": "Sand",
     "hex": "#d9cbb0",
-    "img": "assets/products/hoodie-sand.webp"
+    "img": "assets/products/hoodie-sand.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/hoodie-sand.webp"
+     }
+    ]
    },
    {
     "name": "Light Blue",
     "hex": "#a7c6e6",
-    "img": "assets/products/hoodie-light-blue.webp"
+    "img": "assets/products/hoodie-light-blue.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/hoodie-light-blue.webp"
+     }
+    ]
    },
    {
     "name": "Black",
     "hex": "#1d1d1e",
-    "img": "assets/products/hoodie-black.webp"
+    "img": "assets/products/hoodie-black.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/hoodie-black.webp"
+     },
+     {
+      "label": "Youth version",
+      "img": "assets/products/views/hoodie-youth-black-front.webp"
+     }
+    ]
    },
    {
     "name": "Red",
     "hex": "#c41e3a",
-    "img": "assets/products/hoodie-red.webp"
+    "img": "assets/products/hoodie-red.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/hoodie-red.webp"
+     },
+     {
+      "label": "Youth version",
+      "img": "assets/products/views/hoodie-youth-red-front.webp"
+     }
+    ]
    }
   ],
   "youthColors": [
@@ -295,22 +471,54 @@ window.HBC_PRODUCTS=[
    {
     "name": "Sport Grey",
     "hex": "#b4b4b2",
-    "img": "assets/products/crew-sport-grey.webp"
+    "img": "assets/products/crew-sport-grey.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/crew-sport-grey.webp"
+     },
+     {
+      "label": "Youth version",
+      "img": "assets/products/views/crew-youth-sport-grey-front.webp"
+     }
+    ]
    },
    {
     "name": "Navy",
     "hex": "#1f2a44",
-    "img": "assets/products/crew-navy.webp"
+    "img": "assets/products/crew-navy.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/crew-navy.webp"
+     },
+     {
+      "label": "Youth version",
+      "img": "assets/products/views/crew-youth-navy-front.webp"
+     }
+    ]
    },
    {
     "name": "Sand",
     "hex": "#d9cbb0",
-    "img": "assets/products/crew-sand.webp"
+    "img": "assets/products/crew-sand.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/crew-sand.webp"
+     }
+    ]
    },
    {
     "name": "Cherry Red",
     "hex": "#b5152b",
-    "img": "assets/products/crew-cherry-red.webp"
+    "img": "assets/products/crew-cherry-red.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/crew-cherry-red.webp"
+     }
+    ]
    }
   ],
   "youthColors": [
@@ -330,7 +538,7 @@ window.HBC_PRODUCTS=[
    "2XL",
    "3XL"
   ],
-  "blurb": "A classic crewneck with an oversized H mark on the chest. Youth sizes in Sport Grey and Navy.",
+  "blurb": "A classic crewneck with the HUDSON BASEBALL CENTER lockup across the chest. Youth sizes in Sport Grey and Navy.",
   "details": [
    "50/50 cotton/polyester Heavy Blend fleece",
    "Classic fit, rib-knit collar",
@@ -356,22 +564,46 @@ window.HBC_PRODUCTS=[
    {
     "name": "Sport Grey",
     "hex": "#b4b4b2",
-    "img": "assets/products/sweatpants-sport-grey.webp"
+    "img": "assets/products/sweatpants-sport-grey.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/sweatpants-sport-grey.webp"
+     }
+    ]
    },
    {
     "name": "Sand",
     "hex": "#ddd3bd",
-    "img": "assets/products/sweatpants-sand.webp"
+    "img": "assets/products/sweatpants-sand.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/sweatpants-sand.webp"
+     }
+    ]
    },
    {
     "name": "Navy",
     "hex": "#1f2a44",
-    "img": "assets/products/sweatpants-navy.webp"
+    "img": "assets/products/sweatpants-navy.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/sweatpants-navy.webp"
+     }
+    ]
    },
    {
     "name": "Black",
     "hex": "#1d1d1e",
-    "img": "assets/products/sweatpants-black.webp"
+    "img": "assets/products/sweatpants-black.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/sweatpants-black.webp"
+     }
+    ]
    }
   ],
   "sizes": [
@@ -408,22 +640,46 @@ window.HBC_PRODUCTS=[
    {
     "name": "Grey Heather",
     "hex": "#bdbdbd",
-    "img": "assets/products/shorts-grey-heather.webp"
+    "img": "assets/products/shorts-grey-heather.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/shorts-grey-heather.webp"
+     }
+    ]
    },
    {
     "name": "Black",
     "hex": "#1d1d1e",
-    "img": "assets/products/shorts-black.webp"
+    "img": "assets/products/shorts-black.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/shorts-black.webp"
+     }
+    ]
    },
    {
     "name": "Red",
     "hex": "#c41e3a",
-    "img": "assets/products/shorts-red.webp"
+    "img": "assets/products/shorts-red.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/shorts-red.webp"
+     }
+    ]
    },
    {
     "name": "Sandstone",
     "hex": "#c8b391",
-    "img": "assets/products/shorts-sandstone.webp"
+    "img": "assets/products/shorts-sandstone.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/shorts-sandstone.webp"
+     }
+    ]
    }
   ],
   "sizes": [
@@ -434,7 +690,7 @@ window.HBC_PRODUCTS=[
    "XL",
    "2XL"
   ],
-  "blurb": "Midweight fleece shorts for summer camp days, with a small H mark on the left leg.",
+  "blurb": "Midweight fleece shorts for summer camp days, with an H mark on the lower left leg.",
   "details": [
    "80/20 cotton/polyester midweight fleece",
    "Elastic waistband with flat drawcord",
@@ -460,17 +716,59 @@ window.HBC_PRODUCTS=[
    {
     "name": "Red",
     "hex": "#c41e3a",
-    "img": "assets/products/phone-red.webp"
+    "img": "assets/products/phone-red.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/phone-red.webp"
+     },
+     {
+      "label": "Close-up",
+      "img": "assets/products/views/phone-red-close-up.webp"
+     },
+     {
+      "label": "Two-piece shell",
+      "img": "assets/products/views/phone-red-layers.webp"
+     }
+    ]
    },
    {
     "name": "Navy",
     "hex": "#1f2a44",
-    "img": "assets/products/phone-navy.webp"
+    "img": "assets/products/phone-navy.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/phone-navy.webp"
+     },
+     {
+      "label": "Close-up",
+      "img": "assets/products/views/phone-navy-close-up.webp"
+     },
+     {
+      "label": "Two-piece shell",
+      "img": "assets/products/views/phone-navy-layers.webp"
+     }
+    ]
    },
    {
     "name": "Cream",
     "hex": "#efe7d6",
-    "img": "assets/products/phone-cream.webp"
+    "img": "assets/products/phone-cream.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/phone-cream.webp"
+     },
+     {
+      "label": "Close-up",
+      "img": "assets/products/views/phone-cream-close-up.webp"
+     },
+     {
+      "label": "Two-piece shell",
+      "img": "assets/products/views/phone-cream-layers.webp"
+     }
+    ]
    }
   ],
   "sizes": [
@@ -512,22 +810,46 @@ window.HBC_PRODUCTS=[
    {
     "name": "Navy",
     "hex": "#1f2c55",
-    "img": "assets/products/tumbler-navy.webp"
+    "img": "assets/products/tumbler-navy.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/tumbler-navy.webp"
+     }
+    ]
    },
    {
     "name": "Red",
     "hex": "#c8102e",
-    "img": "assets/products/tumbler-red.webp"
+    "img": "assets/products/tumbler-red.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/tumbler-red.webp"
+     }
+    ]
    },
    {
     "name": "White",
     "hex": "#f2f2f0",
-    "img": "assets/products/tumbler-white.webp"
+    "img": "assets/products/tumbler-white.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/tumbler-white.webp"
+     }
+    ]
    },
    {
     "name": "Black",
     "hex": "#1a1a1a",
-    "img": "assets/products/tumbler-black.webp"
+    "img": "assets/products/tumbler-black.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/tumbler-black.webp"
+     }
+    ]
    }
   ],
   "sizes": [
@@ -563,22 +885,82 @@ window.HBC_PRODUCTS=[
    {
     "name": "Red",
     "hex": "#c8102e",
-    "img": "assets/products/mug-red.webp"
+    "img": "assets/products/mug-red.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/mug-red.webp"
+     },
+     {
+      "label": "Left side",
+      "img": "assets/products/views/mug-red-left.webp"
+     },
+     {
+      "label": "On the table",
+      "img": "assets/products/views/mug-red-context-1.webp"
+     },
+     {
+      "label": "Handle view",
+      "img": "assets/products/views/mug-red-context-2.webp"
+     }
+    ]
    },
    {
     "name": "Navy",
     "hex": "#1f2c55",
-    "img": "assets/products/mug-navy.webp"
+    "img": "assets/products/mug-navy.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/mug-navy.webp"
+     },
+     {
+      "label": "Left side",
+      "img": "assets/products/views/mug-navy-left.webp"
+     },
+     {
+      "label": "On the table",
+      "img": "assets/products/views/mug-navy-context-1.webp"
+     },
+     {
+      "label": "Handle view",
+      "img": "assets/products/views/mug-navy-context-2.webp"
+     }
+    ]
    },
    {
     "name": "Black",
     "hex": "#1a1a1a",
-    "img": "assets/products/mug-black.webp"
+    "img": "assets/products/mug-black.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/mug-black.webp"
+     },
+     {
+      "label": "Left side",
+      "img": "assets/products/views/mug-black-left.webp"
+     },
+     {
+      "label": "On the table",
+      "img": "assets/products/views/mug-black-context-1.webp"
+     },
+     {
+      "label": "Handle view",
+      "img": "assets/products/views/mug-black-context-2.webp"
+     }
+    ]
    },
    {
     "name": "Light Blue",
     "hex": "#7fb2e0",
-    "img": "assets/products/mug-light-blue.webp"
+    "img": "assets/products/mug-light-blue.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/mug-light-blue.webp"
+     }
+    ]
    }
   ],
   "sizes": [
@@ -611,17 +993,35 @@ window.HBC_PRODUCTS=[
    {
     "name": "Navy",
     "hex": "#1f2a44",
-    "img": "assets/products/keychain-navy.webp"
+    "img": "assets/products/keychain-navy.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/keychain-navy.webp"
+     }
+    ]
    },
    {
     "name": "Red",
     "hex": "#c41e3a",
-    "img": "assets/products/keychain-red.webp"
+    "img": "assets/products/keychain-red.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/keychain-red.webp"
+     }
+    ]
    },
    {
     "name": "White",
     "hex": "#f4f2ee",
-    "img": "assets/products/keychain-white.webp"
+    "img": "assets/products/keychain-white.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/keychain-white.webp"
+     }
+    ]
    }
   ],
   "sizes": [
@@ -654,17 +1054,83 @@ window.HBC_PRODUCTS=[
    {
     "name": "Red",
     "hex": "#c41e3a",
-    "img": "assets/products/towel-red.webp"
+    "img": "assets/products/towel-red.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/towel-red.webp"
+     },
+     {
+      "label": "In use",
+      "img": "assets/products/views/towel-red-lifestyle-1.webp"
+     },
+     {
+      "label": "Over the shoulder",
+      "img": "assets/products/views/towel-red-lifestyle-2.webp"
+     },
+     {
+      "label": "Flat",
+      "img": "assets/products/views/towel-red-front-horizontal.webp"
+     },
+     {
+      "label": "Hanging",
+      "img": "assets/products/views/towel-red-context.webp"
+     }
+    ]
    },
    {
     "name": "Navy",
     "hex": "#1f2a44",
-    "img": "assets/products/towel-navy.webp"
+    "img": "assets/products/towel-navy.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/towel-navy.webp"
+     },
+     {
+      "label": "In use",
+      "img": "assets/products/views/towel-navy-lifestyle-1.webp"
+     },
+     {
+      "label": "Over the shoulder",
+      "img": "assets/products/views/towel-navy-lifestyle-2.webp"
+     },
+     {
+      "label": "Flat",
+      "img": "assets/products/views/towel-navy-front-horizontal.webp"
+     },
+     {
+      "label": "Hanging",
+      "img": "assets/products/views/towel-navy-context.webp"
+     }
+    ]
    },
    {
     "name": "Light Blue",
     "hex": "#8fb4dd",
-    "img": "assets/products/towel-light-blue.webp"
+    "img": "assets/products/towel-light-blue.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/towel-light-blue.webp"
+     },
+     {
+      "label": "In use",
+      "img": "assets/products/views/towel-light-blue-lifestyle-1.webp"
+     },
+     {
+      "label": "Over the shoulder",
+      "img": "assets/products/views/towel-light-blue-lifestyle-2.webp"
+     },
+     {
+      "label": "Flat",
+      "img": "assets/products/views/towel-light-blue-front-horizontal.webp"
+     },
+     {
+      "label": "Hanging",
+      "img": "assets/products/views/towel-light-blue-context.webp"
+     }
+    ]
    }
   ],
   "sizes": [
@@ -701,17 +1167,35 @@ window.HBC_PRODUCTS=[
    {
     "name": "Navy",
     "hex": "#1f2a44",
-    "img": "assets/products/blanket-navy.webp"
+    "img": "assets/products/blanket-navy.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/blanket-navy.webp"
+     }
+    ]
    },
    {
     "name": "Light Blue",
     "hex": "#8fb4dd",
-    "img": "assets/products/blanket-light-blue.webp"
+    "img": "assets/products/blanket-light-blue.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/blanket-light-blue.webp"
+     }
+    ]
    },
    {
     "name": "Red",
     "hex": "#b81c2e",
-    "img": "assets/products/blanket-red.webp"
+    "img": "assets/products/blanket-red.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/blanket-red.webp"
+     }
+    ]
    }
   ],
   "sizes": [
@@ -745,22 +1229,78 @@ window.HBC_PRODUCTS=[
    {
     "name": "Black",
     "hex": "#1d1d1e",
-    "img": "assets/products/backpack-black.webp"
+    "img": "assets/products/backpack-black.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/backpack-black.webp"
+     },
+     {
+      "label": "Left side",
+      "img": "assets/products/views/backpack-black-left.webp"
+     },
+     {
+      "label": "Right side",
+      "img": "assets/products/views/backpack-black-right.webp"
+     }
+    ]
    },
    {
     "name": "Navy",
     "hex": "#1f2a44",
-    "img": "assets/products/backpack-navy.webp"
+    "img": "assets/products/backpack-navy.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/backpack-navy.webp"
+     },
+     {
+      "label": "Left side",
+      "img": "assets/products/views/backpack-navy-left.webp"
+     },
+     {
+      "label": "Right side",
+      "img": "assets/products/views/backpack-navy-right.webp"
+     }
+    ]
    },
    {
     "name": "Red",
     "hex": "#c41e3a",
-    "img": "assets/products/backpack-red.webp"
+    "img": "assets/products/backpack-red.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/backpack-red.webp"
+     },
+     {
+      "label": "Left side",
+      "img": "assets/products/views/backpack-red-left.webp"
+     },
+     {
+      "label": "Right side",
+      "img": "assets/products/views/backpack-red-right.webp"
+     }
+    ]
    },
    {
     "name": "Sand",
     "hex": "#d9cbb0",
-    "img": "assets/products/backpack-sand.webp"
+    "img": "assets/products/backpack-sand.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/backpack-sand.webp"
+     },
+     {
+      "label": "Left side",
+      "img": "assets/products/views/backpack-sand-left.webp"
+     },
+     {
+      "label": "Right side",
+      "img": "assets/products/views/backpack-sand-right.webp"
+     }
+    ]
    }
   ],
   "sizes": [
@@ -792,23 +1332,41 @@ window.HBC_PRODUCTS=[
    {
     "name": "Black",
     "hex": "#1d1d1e",
-    "img": "assets/products/umbrella-black.webp"
+    "img": "assets/products/umbrella-black.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/umbrella-black.webp"
+     }
+    ]
    },
    {
     "name": "Navy",
     "hex": "#1f2a44",
-    "img": "assets/products/umbrella-navy.webp"
+    "img": "assets/products/umbrella-navy.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/umbrella-navy.webp"
+     }
+    ]
    },
    {
     "name": "Red",
     "hex": "#c41e3a",
-    "img": "assets/products/umbrella-red.webp"
+    "img": "assets/products/umbrella-red.webp",
+    "views": [
+     {
+      "label": "Front",
+      "img": "assets/products/umbrella-red.webp"
+     }
+    ]
    }
   ],
   "sizes": [
    "One size"
   ],
-  "blurb": "A semi-automatic compact umbrella with eight ribs. Because rain delays happen.",
+  "blurb": "A semi-automatic compact umbrella with eight ribs and an allover H pattern. Because rain delays happen.",
   "details": [
    "100% polyester pongee canopy, waterproof",
    "Semi-automatic open",

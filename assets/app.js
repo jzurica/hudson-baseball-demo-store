@@ -90,7 +90,7 @@ function home(){
   var ess=['insulated-tumbler-20oz','accent-coffee-mug','rally-towel','acrylic-keychain'].map(bySlug);
   var tick='<span>7U–12U Travel</span><i>/</i><span>Clinics</span><i>/</i><span>Private Lessons</span><i>/</i><span>Cage Rentals</span><i>/</i><span>Camps</span><i>/</i><span>Union City, NJ</span><i>/</i>';
   return ''+
-  '<section class="hero"><div class="hero-media"><img src="assets/img/hero-cage.webp" alt="Youth hitter taking swings in an indoor batting cage" width="2000" height="1125" fetchpriority="high"></div>'+
+  '<section class="hero"><div class="hero-media"><img src="assets/img/hero-dugout.webp" alt="Hudson Baseball Center players in red jerseys watching from the dugout fence" width="1920" height="758" fetchpriority="high"></div>'+
    '<div class="wrap hero-copy"><div class="eyebrow">Official team store · Fall/Winter 2026</div>'+
    '<h1 class="display">Built in<br>the <span class="red">cage.</span></h1>'+
    '<p class="lead">Gear for the players, parents and coaches of Hudson Baseball Center. Every family orders their own, from youth XS to adult 3XL, and it ships to your door.</p>'+
@@ -110,7 +110,7 @@ function home(){
   '<section class="sec" style="padding-top:0"><div class="wrap"><div class="sec-head"><div><div class="eyebrow">New this season</div><h2 class="display" style="margin-top:12px">The drop</h2></div><a class="more" href="#/shop/fleece">Shop fleece</a></div>'+
    '<div class="rail">'+feat.map(card).join('')+'</div></div></section>'+
 
-  '<section class="split"><div class="media"><img src="assets/img/life-huddle.webp" alt="Hudson youth team huddled on the turf" loading="lazy"></div>'+
+  '<section class="split"><div class="media"><img src="assets/img/club-team.webp" alt="Hudson Baseball Center team sitting arm in arm along the outfield" loading="lazy"></div>'+
    '<div class="copy reveal"><div class="eyebrow" style="color:#a9a59b">How the team store works</div><h2 class="display">One club.<br><em>Every family.</em></h2>'+
    '<p>No bulk order forms, no collecting cash at practice and no box of wrong sizes. Each family shops on their own and their gear ships home.</p>'+
    '<ol class="steps"><li><b>01</b><div><strong>Pick it, size it</strong><span>Youth XS through adult 3XL. No minimums.</span></div></li>'+
@@ -128,7 +128,7 @@ function home(){
   '</div></section>'+
 
   '<section class="sec band"><div class="wrap"><div class="band-grid">'+
-   '<div class="feature reveal"><img src="assets/img/life-bucket.webp" alt="Bucket of practice baseballs and a wood bat on turf" loading="lazy"><div class="lbl"><div class="eyebrow" style="color:#e9e6de">Practice-day essentials</div><h2 class="display" style="margin-top:12px">Bring it<br>to the cage</h2></div></div>'+
+   '<div class="feature reveal"><img src="assets/img/towel-lifestyle.webp" alt="Red Hudson rally towel held up against a blue sky" loading="lazy"><div class="lbl"><div class="eyebrow" style="color:#e9e6de">Game-day essentials</div><h2 class="display" style="margin-top:12px">Wave it from<br>the bleachers</h2></div></div>'+
    '<div class="grid">'+ess.map(card).join('')+'</div>'+
   '</div></div></section>'+
 
@@ -151,6 +151,8 @@ function shop(cat){
   '<div style="display:flex;gap:16px;align-items:center"><span class="count">'+list.length+' products</span><select id="sort" aria-label="Sort"><option value="featured">Featured</option><option value="low">Price, low to high</option><option value="high">Price, high to low</option></select></div></div>'+
   '<div class="grid" style="padding-bottom:96px">'+list.map(card).join('')+'</div></div>';
 }
+function viewsOf(c){return (c.views&&c.views.length)?c.views:[{label:'Front',img:c.img}]}
+function thumbsHTML(c,vi){return viewsOf(c).map(function(v,i){return '<button class="'+(i===vi?'on':'')+'" data-vi="'+i+'" aria-label="'+esc(v.label)+'" title="'+esc(v.label)+'"><img src="'+v.img+'" alt=""></button>'}).join('')}
 function product(slug,q){
   var p=bySlug(slug); if(!p) return notFound();
   var ci=0; if(q.c){p.colors.forEach(function(c,i){if(c.name===q.c) ci=i})}
@@ -167,7 +169,7 @@ function product(slug,q){
     (p.pfYouth?'<dt>Youth version</dt><dd>'+esc(p.pfYouth.brand+' '+p.pfYouth.model+' '+p.pfYouth.product)+' (blueprint '+p.pfYouth.blueprint+')</dd>':'')+'</dl>';
   return '<div class="wrap"><div class="crumbs"><a href="#/">Home</a> / <a href="#/shop/'+(p.cat==='youth'?'youth':p.cat)+'">'+esc(catName(p.cat))+'</a> / '+esc(p.name)+'</div>'+
   '<div class="pdp" data-slug="'+p.slug+'">'+
-   '<div class="gallery"><div class="thumbs">'+p.colors.map(function(x,i){return '<button class="'+(i===ci?'on':'')+'" data-ci="'+i+'" aria-label="'+esc(x.name)+'"><img src="'+x.img+'" alt=""></button>'}).join('')+'</div>'+
+   '<div class="gallery"><div class="thumbs" id="thumbs">'+thumbsHTML(c,0)+'</div>'+
    '<div class="stage"><img id="stageImg" src="'+c.img+'" alt="'+esc(p.name)+' in '+esc(c.name)+'" width="1000" height="1000"></div></div>'+
    '<div class="buy"><div class="eyebrow">'+esc(p.tag)+' · Hudson Baseball Center</div><h1 class="display">'+esc(p.name)+'</h1>'+
     '<div class="price" id="pdpPrice">'+(p.youthPrice?money(p.youthPrice)+' youth · '+money(p.price)+' adult':(p.sizePrices?priceRange(p):money(p.price)))+'</div>'+
@@ -205,10 +207,21 @@ function bindProduct(slug,q){
   function price(){
     if(state.size) $('#pdpPrice').textContent=money(priceFor(p,state.size));
   }
-  function setColor(i){
-    state.ci=i; var c=p.colors[i], img=$('#stageImg');
+  function show(src,alt){
+    var img=$('#stageImg'); if(img.getAttribute('src')===src) return;
     img.classList.add('fade');
-    var n=new Image(); n.onload=function(){img.src=c.img;img.alt=p.name+' in '+c.name;img.classList.remove('fade')}; n.src=c.img;
+    var n=new Image(); n.onload=function(){img.src=src;img.alt=alt;img.classList.remove('fade')}; n.src=src;
+  }
+  function setView(vi){
+    var c=p.colors[state.ci], vs=viewsOf(c); vi=Math.max(0,Math.min(vs.length-1,vi)); state.vi=vi;
+    show(vs[vi].img,p.name+' in '+c.name+' · '+vs[vi].label);
+    $$('#thumbs [data-vi]').forEach(function(b){b.classList.toggle('on',+b.dataset.vi===vi)});
+  }
+  function bindThumbs(){$$('#thumbs [data-vi]').forEach(function(b){b.addEventListener('click',function(){setView(+b.dataset.vi)})})}
+  function setColor(i){
+    state.ci=i; var c=p.colors[i];
+    $('#thumbs').innerHTML=thumbsHTML(c,0); bindThumbs(); state.vi=0;
+    show(c.img,p.name+' in '+c.name);
     $('#colorName').textContent=c.name;
     $$('.pdp [data-ci]').forEach(function(b){b.classList.toggle('on',+b.dataset.ci===i)});
     try{history.replaceState(null,'','#/product/'+p.slug+'?c='+encodeURIComponent(c.name))}catch(e){}
@@ -217,6 +230,8 @@ function bindProduct(slug,q){
   $$('.pdp [data-ci]').forEach(function(b){b.addEventListener('click',function(){setColor(+b.dataset.ci)})});
   $$('#sizes .size').forEach(function(b){b.addEventListener('click',function(){
     if(b.disabled) return; $$('#sizes .size').forEach(function(x){x.classList.remove('on')}); b.classList.add('on'); state.size=b.dataset.size; $('#sizeName').textContent=state.size; $('#err').textContent=''; price();
+    var vs=viewsOf(p.colors[state.ci]), yi=-1; vs.forEach(function(v,i){if(v.label==='Youth version') yi=i});
+    if(yi>=0) setView(isYouth(state.size)?yi:0);
   })});
   $$('[data-pq]').forEach(function(b){b.addEventListener('click',function(){state.qty=Math.max(1,Math.min(20,state.qty+(+b.dataset.pq)));$('#pq').textContent=state.qty})});
   $('#addBtn').addEventListener('click',function(){
@@ -225,6 +240,7 @@ function bindProduct(slug,q){
     var b=$('#addBtn'); b.textContent='Added to bag'; setTimeout(function(){b.textContent='Add to bag'},1600);
     openCart();
   });
+  bindThumbs();
   availability();
 }
 function cartPage(){
@@ -284,7 +300,7 @@ function club(){
   return '<section class="club-hero"><div class="copy"><div class="eyebrow" style="color:#a9a59b">The team store</div><h1 class="display">Gear for<br>the whole club</h1>'+
   '<p>Hudson Baseball Center runs clinics, lessons, cage rentals, camps and 7U–12U travel teams out of an 8,000 sq ft indoor facility on Summit Ave. This store dresses all of it.</p>'+
   '<p>It runs on Benchside Supply. Families order on their own, sizes run YXS to 3XL, every piece is printed on demand, and it ships to each home. The club never handles inventory, order forms or cash.</p>'+
-  '<div class="btn-row" style="margin-top:28px"><a class="btn btn-red" href="#/shop">Shop the store</a></div></div><div class="media"><img src="assets/img/life-huddle.webp" alt="Youth team huddle" loading="lazy"></div></section>'+
+  '<div class="btn-row" style="margin-top:28px"><a class="btn btn-red" href="#/shop">Shop the store</a></div></div><div class="media"><img src="assets/img/club-team.webp" alt="Hudson Baseball Center team on the outfield grass" loading="lazy"></div></section>'+
   '<section class="sec"><div class="wrap faq"><div class="eyebrow">FAQ</div><h2 class="display" style="font-size:clamp(40px,5vw,72px);margin:12px 0 28px">Good questions</h2><div class="acc">'+
   faq('Is there a minimum order?','No. Order a single hat or outfit the whole family.')+
   faq('When will my order arrive?','Most orders arrive in 5–9 business days. Everything is printed to order, then shipped straight to your home.')+
