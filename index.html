@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hudson Baseball Center — Team Store (Demo)</title>
+<meta name="description" content="Demo of the official Hudson Baseball Center team store, built by Benchside Supply. Order individually, sizes YXS–3XL, shipped to your home.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#111214">
+<link rel="icon" type="image/png" href="assets/brand/favicon.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="demo-bar" role="note">
+  <span><strong>Demo store.</strong> Built by Benchside Supply for Hudson Baseball Center. Nothing here is charged or shipped.</span>
+</div>
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <button class="menu-btn" aria-label="Open menu" data-action="menu"><span></span><span></span></button>
+    <a class="brand" href="#/" aria-label="Hudson Baseball Center team store home">
+      <img src="assets/brand/wordmark_onlight.webp" alt="Hudson Baseball Center" width="600" height="137">
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="#/shop/fleece">Fleece</a>
+      <a href="#/shop/tees">Tees</a>
+      <a href="#/shop/youth">Youth</a>
+      <a href="#/shop/headwear">Headwear</a>
+      <a href="#/shop/gear">Gear</a>
+      <a href="#/shop/drinkware">Drinkware</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#/shop" class="link-shop">Shop all</a>
+      <button class="bag-btn" data-action="open-cart" aria-label="Open bag">Bag <span class="bag-count" id="bagCount">0</span></button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <a href="#/shop">Shop all</a>
+    <a href="#/shop/fleece">Fleece</a>
+    <a href="#/shop/tees">Tees</a>
+    <a href="#/shop/youth">Youth</a>
+    <a href="#/shop/headwear">Headwear</a>
+    <a href="#/shop/gear">Gear</a>
+    <a href="#/shop/drinkware">Drinkware</a>
+    <a href="#/shop/home">Home</a>
+    <a href="#/club">The club</a>
+  </nav>
+</header>
+
+<main id="app" tabindex="-1"></main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="f-brand">
+      <img src="assets/brand/wordmark_ondark.webp" alt="Hudson Baseball Center" width="600" height="137">
+      <p>8,000 sq ft of indoor cages, clinics, lessons and 7U–12U travel baseball.<br>2300 Summit Ave, Union City, NJ</p>
+    </div>
+    <div>
+      <h4>Shop</h4>
+      <a href="#/shop/fleece">Fleece</a><a href="#/shop/tees">Tees</a><a href="#/shop/youth">Youth</a><a href="#/shop/headwear">Headwear</a><a href="#/shop/gear">Gear</a>
+    </div>
+    <div>
+      <h4>Help</h4>
+      <a href="#/club">How the team store works</a><a href="#/sizing">Size guide</a><a href="#/cart">Your bag</a>
+    </div>
+    <div>
+      <h4>Club</h4>
+      <a href="https://hudsonbaseballcenter.com" target="_blank" rel="noopener">hudsonbaseballcenter.com</a>
+      <a href="#/club">Travel teams</a>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <span>© 2026 Hudson Baseball Center. Demo team store.</span>
+    <span>Powered by <a href="https://benchsidesupply.com" target="_blank" rel="noopener">Benchside Supply</a>. Printed on demand, shipped to each family.</span>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim" data-action="close-cart"></div>
+<aside class="drawer" id="drawer" aria-label="Your bag" aria-hidden="true">
+  <div class="drawer-head">
+    <h3>Your bag</h3>
+    <button class="x" data-action="close-cart" aria-label="Close bag">Close</button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-foot" id="drawerFoot"></div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/products.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
